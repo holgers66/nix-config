@@ -7,7 +7,7 @@
       cat = "bat --style=header,grid";
       ls = "lsd";
       lg = "lazygit";
-      rebuild = "sudo ./result/sw/bin/darwin-rebuild switch --flake .#mbp"
+      rebuild = "sudo ./result/sw/bin/darwin-rebuild switch --flake .#mbp";
     };
     initContent = ''
       eval "$(fnm env --use-on-cd --shell zsh)"
