@@ -14,6 +14,7 @@
     ripgrep
     tree
     vscode
+    iterm2
   ];
 
   # GUI apps (declarative Homebrew)
