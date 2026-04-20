@@ -5,7 +5,15 @@
 
   # CLI tools (replaces brew install)
   environment.systemPackages = with pkgs; [
-    bat fzf delta gh lazygit lsd ripgrep tree
+    bat 
+    fzf
+    delta
+    gh 
+    lazygit 
+    lsd 
+    ripgrep
+    tree
+    vscode
   ];
 
   # GUI apps (declarative Homebrew)
