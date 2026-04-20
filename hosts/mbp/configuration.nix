@@ -17,6 +17,9 @@
     vscode
   ];
 
+  # add touch for sudo
+  security.pam.enableSudoTouchIdAuth = true;
+
   # GUI apps (declarative Homebrew)
   homebrew = {
     enable = true;
