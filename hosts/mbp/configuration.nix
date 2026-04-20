@@ -35,6 +35,9 @@
   # Determinate installer manages Nix itself
   # nix.enable = false;
 
+  nixpkgs.config.allowUnfree = true;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   system.stateVersion = 6;
   nixpkgs.hostPlatform = "aarch64-darwin";
 }
