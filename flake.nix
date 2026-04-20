@@ -14,6 +14,7 @@
   };
 
   outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager }:
+
     {
       darwinConfigurations."mbp" = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
