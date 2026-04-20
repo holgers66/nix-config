@@ -7,6 +7,7 @@
       cat = "bat --style=header,grid";
       ls = "lsd";
       lg = "lazygit";
+      drs = "darwin-rebuild switch --flake ~/.config/nix#mbp"
     };
     initContent = ''
       eval "$(fnm env --use-on-cd --shell zsh)"
