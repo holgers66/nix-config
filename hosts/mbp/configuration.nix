@@ -13,6 +13,8 @@
     lsd 
     ripgrep
     tree
+    iterm2
+    vscode
   ];
 
   # GUI apps (declarative Homebrew)
