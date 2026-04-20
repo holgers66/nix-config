@@ -20,6 +20,9 @@
   # add touch for sudo
   security.pam.services.sudo_local.touchIdAuth = true;
 
+  # enable flakes, etc.
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # GUI apps (declarative Homebrew)
   homebrew = {
     enable = true;
