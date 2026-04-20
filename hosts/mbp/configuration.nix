@@ -28,7 +28,7 @@
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";
-    casks = [ "slack" "linear-linear" "ghostty" ];
+    casks = [ "linear-linear" "ghostty" ];
   };
 
   # macOS preferences
