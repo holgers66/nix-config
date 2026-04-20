@@ -15,6 +15,7 @@
     tree
     iterm2
     vscode
+    slack
   ];
 
   # add touch for sudo
@@ -33,8 +34,6 @@
   # macOS preferences
   system.defaults = {
     dock.autohide = true;
-    dock.mru-spaces = false;
-    finder.AppleShowAllFiles = true;
     finder.AppleShowAllExtensions = true;
     finder.FXPreferredViewStyle = "clmv";
   };
