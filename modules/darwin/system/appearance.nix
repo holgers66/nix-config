@@ -20,12 +20,12 @@ in
       # Add your persistent others here
     ];
     show-recents = false;
-    tilesize = 36; # Set the icon size on the dock; default is 64
+    tilesize = 64; # Set the icon size on the dock; default is 64
   };
 
   system.defaults.NSGlobalDomain = {
     
-    AppleInterfaceStyle = "Dark";     # "Dark" or "Light" - Darkmode all the things
+    AppleInterfaceStyle = "Auto";     # "Dark" or "Light" - Darkmode all the things
     # Add more NSGlobalDomain settings here
   };
 
