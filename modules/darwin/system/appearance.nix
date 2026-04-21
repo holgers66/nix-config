@@ -8,7 +8,7 @@ in
     autohide = true;
     orientation = "bottom";
     persistent-apps = [
-      "/Applications/Microsoft Remote Desktop.app"
+#      "/Applications/Microsoft Remote Desktop.app"
       # Use the nixpkgs path to the app for apps installed via nix. This will automatically use the latest nix store path.
       "/${pkgs.slack}/Applications/Slack.app"
       "/${pkgs.vscode}/Applications/Visual Studio Code.app"

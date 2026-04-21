@@ -7,6 +7,6 @@
     onActivation.cleanup = "uninstall";
 
     brews = [];
-    casks = ["microsoft-remote-desktop"];
+    casks = ["windows-app"];
   };
 }
