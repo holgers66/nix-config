@@ -17,6 +17,5 @@
       obsidian
       bitwarden-desktop
       google-chrome
-      remmina
   ];
 }

@@ -15,6 +15,7 @@ in
       "/${pkgs.iterm2}/Applications/iTerm2.app"
       "/${pkgs.obsidian}/Applications/Obsidian.app"
       "/${pkgs.bitwarden-desktop}/Applications/Bitwarden.app"
+      "/${pkgs.google-chrome}/Applications/Google Chrome.app"
       # Add your persistent apps here
     ];
     persistent-others = [
