@@ -13,5 +13,6 @@
       tmux
       vim
       vscode
+      iterm2
   ];
 }
