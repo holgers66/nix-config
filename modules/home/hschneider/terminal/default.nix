@@ -8,10 +8,10 @@
     enableAutosuggestions = true;
     enableCompletion = true;
     shellAliases = {
-      k = kubectl;
+      k = "kubectl";
       ip = "ip --color=auto";
     };
-    
+
     plugins = with pkgs; [
       {
         name = "zsh-syntax-highlighting";
