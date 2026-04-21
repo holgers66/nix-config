@@ -7,6 +7,6 @@
     onActivation.cleanup = "zap";
 
     brews = [];
-    casks = [];
+    casks = ["windows-app"];
   };
 }
