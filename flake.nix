@@ -174,7 +174,7 @@
       ###################################
       darwinPackages = {
         "${hostVars.host1.hostname}" = self.darwinConfigurations."${hostVars.host1.hostname}".pkgs;
-        "${hostVars.host2.hostname}" = self.darwinConfigurations."${hostVars.host2.hostname}".pkgs;
+#        "${hostVars.host2.hostname}" = self.darwinConfigurations."${hostVars.host2.hostname}".pkgs;
       };
     };
 }
