@@ -8,9 +8,11 @@ in
     autohide = true;
     orientation = "bottom";
     persistent-apps = [
-      "/Applications/Ghostty.app"
+#      "/Applications/Ghostty.app"
       # Use the nixpkgs path to the app for apps installed via nix. This will automatically use the latest nix store path.
       "/${pkgs.slack}/Applications/Slack.app"
+      "/${pkgs.vscode}/Applications/Visual Studio Code.app"
+      "/${pkgs.iterm2}/Applications/iTerm2.app"
       # Add your persistent apps here
     ];
     persistent-others = [
