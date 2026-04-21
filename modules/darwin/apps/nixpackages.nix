@@ -16,5 +16,7 @@
       iterm2
       obsidian
       bitwarden-desktop
+      google-chrome
+      remmina
   ];
 }
