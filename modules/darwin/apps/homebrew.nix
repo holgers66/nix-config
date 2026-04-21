@@ -3,7 +3,7 @@
 {
   # Darwin-level Homebrew configuration
   homebrew = {
-    enable = false;
+    enable = true;
     onActivation.cleanup = "uninstall";
 
     brews = [];
