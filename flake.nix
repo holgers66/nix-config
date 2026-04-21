@@ -29,7 +29,7 @@
 #      url = "github:argoproj/homebrew-tap";
 #      flake = false;
 #    };
-#  };
+  };
 
   outputs = inputs@{ self, nix-darwin, home-manager, ... }:
     let
