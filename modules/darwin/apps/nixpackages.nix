@@ -14,5 +14,6 @@
       vim
       vscode
       iterm2
+      obsidian
   ];
 }

@@ -13,6 +13,7 @@ in
       "/${pkgs.slack}/Applications/Slack.app"
       "/${pkgs.vscode}/Applications/Visual Studio Code.app"
       "/${pkgs.iterm2}/Applications/iTerm2.app"
+      "/${pkgs.obsidian}/Applications/Obsidian.app"
       # Add your persistent apps here
     ];
     persistent-others = [
