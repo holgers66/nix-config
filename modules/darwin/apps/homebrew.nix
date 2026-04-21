@@ -3,18 +3,10 @@
 {
   # Darwin-level Homebrew configuration
   homebrew = {
-    enable = true;
+    enable = false;
     onActivation.cleanup = "uninstall";
 
-    brews = [
-      "gh"
-      "git"
-      "helm"
-      "k9s"
-      "ansible"
-    ];
-    casks = [
-      "ghostty"
-    ];
+    brews = [];
+    casks = [];
   };
 }
