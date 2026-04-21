@@ -4,8 +4,8 @@
   programs.zsh = {
     enable = true;
     autocd = true;
-    dotDir = ".config/zsh";
-    enableAutosuggestions = true;
+    dotDir = "/Users/hschneider/.config/zsh";
+    autosuggestion.enable = true;
     enableCompletion = true;
     shellAliases = {
       k = "kubectl";
