@@ -14,7 +14,7 @@ in
       "/${pkgs.vscode}/Applications/Visual Studio Code.app"
       "/${pkgs.iterm2}/Applications/iTerm2.app"
       "/${pkgs.obsidian}/Applications/Obsidian.app"
-#      "/${pkgs.bitwarden-desktop}/Applications/BitWarden.app"
+      "/${pkgs.bitwarden-desktop}/Applications/Bitwarden.app"
       # Add your persistent apps here
     ];
     persistent-others = [
