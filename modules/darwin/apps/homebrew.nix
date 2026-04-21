@@ -4,9 +4,9 @@
   # Darwin-level Homebrew configuration
   homebrew = {
     enable = true;
-    onActivation.cleanup = "uninstall";
+    onActivation.cleanup = "zap";
 
     brews = [];
-    casks = ["windows-app"];
+    casks = [];
   };
 }
