@@ -8,7 +8,7 @@
     enableAutosuggestions = true;
     enableCompletion = true;
     shellAliases = {
-      k = kubectl
+      k = kubectl;
       ip = "ip --color=auto";
     };
                               '';
