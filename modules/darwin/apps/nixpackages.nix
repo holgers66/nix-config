@@ -15,5 +15,6 @@
       vscode
       iterm2
       obsidian
+      bitwarden-desktop
   ];
 }
