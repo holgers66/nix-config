@@ -10,7 +10,7 @@
     shellAliases = {
       k = "kubectl";
       ip = "ip --color=auto";
-      rebuild = "sudo nix run nix-darwin --extra-experimental-features nix-command --extra-experimental-features flakes -- switch --flake .#Holger-MacBook-Pro";
+      rebuild = "sudo nix run nix-darwin --extra-experimental-features nix-command --extra-experimental-features flakes -- switch --flake .#Holgers-MacBook-Pro";
     };
 
     plugins = with pkgs; [
