@@ -37,8 +37,6 @@ in
 
   system.defaults.NSGlobalDomain.AppleShowScrollBars = "Always"; # Show scroll bars always (other options: "WhenScrolling", "Automatic")
 
-  system.defaults.dock.show-recents = false; # Disable showing recent applications in the dock
-
   system.defaults.dock.mineffect = "scale"; # Set the minimize effect to "scale" (other options: "genie", "suck", "scale")
 
   system.defaults.loginwindow = {
