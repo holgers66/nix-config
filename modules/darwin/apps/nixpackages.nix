@@ -57,7 +57,7 @@
       opentofu
       imagemagick
       ffmpeg
-      youtube-dl
+      yt-dlp
       p7zip
       jq
       jo
