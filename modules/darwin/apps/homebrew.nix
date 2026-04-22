@@ -13,7 +13,6 @@
       "the-unarchiver"
       "mstystudio"
       "pearcleaner"
-      "watch"
       ];
   };
 }
