@@ -18,7 +18,7 @@
       bitwarden-desktop
       google-chrome
       maccy
-      vlc
+      vlc-bin
       docker-compose
       colima
       lima
