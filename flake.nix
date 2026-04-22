@@ -42,11 +42,6 @@
           arch = "aarch64-darwin";
           homeDirectory = "/Users/hschneider";
         };
-#        host2 = {
-#          hostname = "example";
-#          arch = "aarch64-darwin";
-#          homeDirectory = "/Users/example";
-#        };
       };
 
       ###################################
@@ -58,11 +53,6 @@
           homeDirectory = "/Users/hschneider";
           shell         = "zsh";
         };
-#        userB = {
-#          username      = "example";
-#          homeDirectory = "/Users/example";
-#          shell         = "fish";
-#        };
       };
 
       ###################################
@@ -138,43 +128,13 @@
         ];
       };
 
-      ###################################
-      # 5. Host 2: example
-      ###################################
-#      darwinConfigurations."${hostVars.host2.hostname}" = let
-#        host2Base = baseDarwinConfig "host2";
-#      in
-#      nix-darwin.lib.darwinSystem {
-#        modules = [
-#          host2Base
-#          ./modules/darwin/homebrew.nix
-#          ./modules/darwin/services.nix
-#          ./modules/darwin/nixpackages.nix
-#          home-manager.darwinModules.home-manager {
-#            home-manager.useGlobalPkgs = true;
-#            home-manager.useUserPackages = true;
-#            home-manager.verbose = true;
 
-#            home-manager.users.${userVars.userB.username} = { pkgs, lib, ... }:
-#            {
-#              home.stateVersion = "24.05";
-#              home.homeDirectory = lib.mkForce (userVars.userB.homeDirectory);
-#              programs.zsh.enable  = (userVars.userB.shell == "zsh");
-#              programs.fish.enable = (userVars.userB.shell == "fish");
-#              imports = [
-#                ./modules/home/${userVars.userB.username}/dotfiles.nix
-#              ];
-#            };
-#          }
-#        ];
-#      };
 
       ###################################
       # 6. (Optional) Expose packages
       ###################################
       darwinPackages = {
         "${hostVars.host1.hostname}" = self.darwinConfigurations."${hostVars.host1.hostname}".pkgs;
-#        "${hostVars.host2.hostname}" = self.darwinConfigurations."${hostVars.host2.hostname}".pkgs;
       };
     };
 }

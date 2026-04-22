@@ -7,9 +7,11 @@
     };
 
   system.defaults.trackpad = {
-    TrackpadThreeFingerDrag = true;
-    FirstClickThreshold = 1;
-    SecondClickThreshold = 1;
+    TrackpadThreeFingerDrag = true; # Enable three-finger drag
+      TrackpadTwoFingerDoubleTapGesture = 2; # Enable two-finger double-tap for right-click
+      Clicking = true; # Enable tap to click
+      # Add more trackpad settings here
+      # You can find more trackpad settings by running `defaults read com.apple.AppleMultitouchTrackpad` in the terminal and adding the desired ones her
     # Set up your trackpad preferences here
   };
 
@@ -19,13 +21,7 @@
     # Set up your keyboard preferences here
   };
 
-  system.primaryUser = "hschneider";
+  system.primaryUser = "hschneider"; # Set the primary user for this system, used for some defaults and permissions
+  system.defaults.screensaver.askForPassword = 1; # Require password immediately after screensaver starts
 
-#  system.defaults.WindowManager.EnableStandardClickToShowDesktop = false; # Disable/Enable standard click to show desktop
-  # You can add more Mac defaults here as well...
-
-#  system.activationScripts.postUserActivation.text = ''
-#    # Following line should allow us to avoid a logout/login cycle
-#    /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
-#  ''; # Activate settings after user activation
 }

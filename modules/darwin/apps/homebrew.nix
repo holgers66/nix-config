@@ -7,6 +7,9 @@
     onActivation.cleanup = "zap";
 
     brews = [];
-    casks = ["windows-app"];
+    casks = [
+      "windows-app"
+      "copyclip"
+      ];
   };
 }
