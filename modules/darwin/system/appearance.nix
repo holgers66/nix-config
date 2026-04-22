@@ -11,7 +11,7 @@ in
       "/Applications/Windows App.app"
       "/System/Applications/Calendar.app"
       "/System/Applications/System Settings.app"
-      "/System/Applications/Safari.app"
+      "/Applications/Safari.app"
       # Use the nixpkgs path to the app for apps installed via nix. This will automatically use the latest nix store path.
       "/${pkgs.slack}/Applications/Slack.app"
       "/${pkgs.vscode}/Applications/Visual Studio Code.app"
