@@ -23,7 +23,6 @@
       colima
       lima
       podman
-      handbrake
       google-cloud-sdk
       tree
       htop
