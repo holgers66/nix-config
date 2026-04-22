@@ -22,6 +22,6 @@
   };
 
   system.primaryUser = "hschneider"; # Set the primary user for this system, used for some defaults and permissions
-  system.defaults.screensaver.askForPassword = 1; # Require password immediately after screensaver starts
+  system.defaults.screensaver.askForPassword = true; # Require password immediately after screensaver starts
 
 }
