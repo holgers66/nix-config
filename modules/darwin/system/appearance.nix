@@ -26,7 +26,7 @@ in
       # Add your persistent others here
     ];
     show-recents = false;
-    tilesize = 64; # Set the icon size on the dock; default is 64
+    tilesize = 48; # Set the icon size on the dock; default is 64
   };
 
   system.defaults.NSGlobalDomain = {
