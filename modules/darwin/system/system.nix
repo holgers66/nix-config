@@ -14,6 +14,16 @@
     # Set up your trackpad preferences here
   };
 
+  system.defaults.controlcenter.Bluetooth = {
+    ShowInMenuBar = "Always"; # Show Bluetooth in the menu bar
+    # Add more Bluetooth settings here
+  };
+
+  system.defaults.controlcenter.Sound = {
+    ShowInMenuBar = "Always"; # Show Sound in the menu bar
+    # Add more Sound settings here
+  };
+
   system.keyboard = {
     swapLeftCtrlAndFn = false; # Swap left control and function keys
     enableKeyMapping = true; # Enable key mapping
