@@ -8,8 +8,7 @@
 
   system.defaults.trackpad = {
     TrackpadThreeFingerDrag = true; # Enable three-finger drag
-      TrackpadTwoFingerDoubleTapGesture = 2; # Enable two-finger double-tap for right-click
-      Clicking = true; # Enable tap to click
+    Clicking = true; # Enable tap to click
       # Add more trackpad settings here
       # You can find more trackpad settings by running `defaults read com.apple.AppleMultitouchTrackpad` in the terminal and adding the desired ones her
     # Set up your trackpad preferences here
