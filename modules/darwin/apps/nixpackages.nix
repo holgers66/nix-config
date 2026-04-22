@@ -17,5 +17,6 @@
       obsidian
       bitwarden-desktop
       google-chrome
+      maccy
   ];
 }

@@ -10,6 +10,10 @@
     casks = [
       "windows-app"
       "copyclip"
+      "alt-tab"
+      "the-unarchiver"
+      "mstystudio"
+      "pearcleaner"
       ];
   };
 }

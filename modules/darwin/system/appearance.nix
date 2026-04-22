@@ -31,8 +31,15 @@ in
 
   system.defaults.NSGlobalDomain = {
     AppleInterfaceStyle = "Dark";     # "Dark" or "Light" - Darkmode all the things
+    AppleIconAppearanceTheme = "RegularDark"; # "RegularDark" or "HighContrastDark" - Dark mode icons
     # Add more NSGlobalDomain settings here
   };
+
+  system.defaults.NSGlobalDomain.AppleShowScrollBars = "Always"; # Show scroll bars always (other options: "WhenScrolling", "Automatic")
+
+  system.defaults.dock.show-recents = false; # Disable showing recent applications in the dock
+
+  system.defaults.dock.mineffect = "scale"; # Set the minimize effect to "scale" (other options: "genie", "suck", "scale")
 
   system.defaults.loginwindow = {
     GuestEnabled = false; # Disable guest account
