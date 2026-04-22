@@ -30,7 +30,7 @@ in
   };
 
   system.defaults.NSGlobalDomain = {
-    AppleInterfaceStyle = "Light";     # "Dark" or "Light" - Darkmode all the things
+    AppleInterfaceStyle = "Dark";     # "Dark" or "Light" - Darkmode all the things
     # Add more NSGlobalDomain settings here
   };
 
