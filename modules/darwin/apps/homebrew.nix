@@ -15,7 +15,6 @@
       "pearcleaner"
       "helium-browser"
       "powerlevel10k"
-      "bat"
       ];
   };
 }
