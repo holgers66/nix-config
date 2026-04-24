@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+      zsh-powerlevel10k
+      meslo-lgs-nf
       awscli2
       azure-cli
       go
