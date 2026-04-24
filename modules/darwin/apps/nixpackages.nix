@@ -66,5 +66,6 @@
       jless
       yq
       fzf
+      bat
   ];
 }
