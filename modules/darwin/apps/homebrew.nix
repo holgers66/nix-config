@@ -6,7 +6,10 @@
     enable = true;
     onActivation.cleanup = "zap";
 
-    brews = [];
+    brews = [
+      "iproute2mac"
+      "bat"
+    ];
     casks = [
       "windows-app"
       "copyclip"
