@@ -13,6 +13,7 @@
       "the-unarchiver"
       "mstystudio"
       "pearcleaner"
+      "helium-browser"
       ];
   };
 }
