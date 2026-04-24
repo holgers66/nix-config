@@ -18,7 +18,6 @@
       "pearcleaner"
       "helium-browser"
       "font-meslo-for-powerlevel10k"
-      "iproute2mac"
       ];
   };
 }
