@@ -63,5 +63,6 @@
       jless
       yq
       fzf
+      libreoffice
   ];
 }

@@ -4,7 +4,9 @@
   # Darwin-level Homebrew configuration
   homebrew = {
     enable = true;
-    onActivation.cleanup = "zap";
+    onActivation.cleanup = "uninstall";
+    enableZshIntegration = true;
+    global.autoUpdate = true;
 
     brews = [
       "iproute2mac"
@@ -23,6 +25,7 @@
       "maccy"
       "rancher"
       "caffeine"
+      "grammarly-desktop"
       ];
   };
 }
