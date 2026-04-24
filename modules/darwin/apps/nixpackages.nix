@@ -9,7 +9,6 @@
       go
       google-cloud-sdk
       kubectl
-      krew
       slack
       tmux
       vim
