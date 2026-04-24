@@ -63,7 +63,5 @@
       jless
       yq
       fzf
-      google-chrome
-      firefox
   ];
 }
