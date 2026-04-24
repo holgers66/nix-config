@@ -15,6 +15,7 @@
       "pearcleaner"
       "helium-browser"
       "powerlevel10k"
+      "font-meslo-for-powerlevel10k"
       ];
   };
 }
