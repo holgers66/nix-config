@@ -17,6 +17,7 @@
       obsidian
       bitwarden-desktop
       google-chrome
+      firefox
       maccy
       vlc-bin
       docker-compose
