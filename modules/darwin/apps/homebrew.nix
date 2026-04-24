@@ -22,6 +22,7 @@
       "font-meslo-for-powerlevel10k"
       "maccy"
       "rancher"
+      "caffeine"
       ];
   };
 }
