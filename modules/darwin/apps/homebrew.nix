@@ -26,6 +26,7 @@
       "rancher"
       "caffeine"
       "grammarly-desktop"
+      "claude"
       ];
   };
 }
