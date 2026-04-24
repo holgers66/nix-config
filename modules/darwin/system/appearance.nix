@@ -21,6 +21,8 @@ in
       "/Applications/Rancher DEsktop.app"
       "/Applications/Windows App.app"
       "/System/Applications/System Settings.app"
+      "/${pkgs.dbeaver-bin}/Applications/DBeaver.app"
+      "/${pkgs.raycast}/Applications/Raycast.app"
       "/${pkgs.bitwarden-desktop}/Applications/Bitwarden.app"
       "/Applications/Pearcleaner.app"
       # Add your persistent apps here
