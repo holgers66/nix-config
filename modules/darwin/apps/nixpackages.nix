@@ -63,5 +63,8 @@
       jless
       yq
       fzf
+      dbeaver-bin
+      raycast
+      rectangle
   ];
 }

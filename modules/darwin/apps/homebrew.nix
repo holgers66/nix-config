@@ -27,6 +27,7 @@
       "caffeine"
       "grammarly-desktop"
       "claude"
+      "rapidapi"
       ];
   };
 }
