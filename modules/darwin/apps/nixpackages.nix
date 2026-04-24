@@ -11,7 +11,6 @@
       kubectl
       krew
       slack
-      teleport
       tmux
       vim
       vscode
@@ -20,7 +19,6 @@
       bitwarden-desktop
       google-chrome
       firefox
-      maccy
       vlc-bin
       docker-compose
       colima

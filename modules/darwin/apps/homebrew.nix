@@ -18,6 +18,7 @@
       "pearcleaner"
       "helium-browser"
       "font-meslo-for-powerlevel10k"
+      "maccy"
       ];
   };
 }
