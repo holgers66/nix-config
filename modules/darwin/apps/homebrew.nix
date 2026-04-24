@@ -9,6 +9,8 @@
     brews = [
       "iproute2mac"
       "bat"
+      "helm"
+      "docker"
     ];
     casks = [
       "windows-app"
@@ -19,6 +21,7 @@
       "helium-browser"
       "font-meslo-for-powerlevel10k"
       "maccy"
+      "rancher"
       ];
   };
 }
