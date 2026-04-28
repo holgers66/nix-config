@@ -66,5 +66,6 @@
       dbeaver-bin
       raycast
       rectangle
+      thunderbird
   ];
 }

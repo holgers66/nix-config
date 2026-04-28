@@ -8,16 +8,16 @@ in
     autohide = true;
     orientation = "bottom";
     persistent-apps = [
-      "/Applications/Helium.app"
       "/System/Applications/Calendar.app"
-
       # "/Applications/Safari.app"
       # Use the nixpkgs path to the app for apps installed via nix. This will automatically use the latest nix store path.
+      "/${pkgs.google-chrome}/Applications/Google Chrome.app"
       "/${pkgs.slack}/Applications/Slack.app"
       "/${pkgs.vscode}/Applications/Visual Studio Code.app"
       "/${pkgs.iterm2}/Applications/iTerm2.app"
       "/Applications/Claude.app"
       "/${pkgs.obsidian}/Applications/Obsidian.app"
+      "/${pkgs.thunderbird}/Applications/Thunderbird.app"
       "/Applications/Rancher DEsktop.app"
       "/Applications/Windows App.app"
       "/System/Applications/System Settings.app"
