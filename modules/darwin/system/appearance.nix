@@ -18,7 +18,6 @@ in
       "/Applications/Helium.app"
       "/Applications/Claude.app"
       "/${pkgs.obsidian}/Applications/Obsidian.app"
-      "/${pkgs.thunderbird}/Applications/Thunderbird.app"
       "/Applications/Rancher Desktop.app"
       "/Applications/Windows App.app"
       "/System/Applications/System Settings.app"
