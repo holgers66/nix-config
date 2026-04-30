@@ -24,6 +24,7 @@ in
       "/${pkgs.dbeaver-bin}/Applications/DBeaver.app"
       "/${pkgs.raycast}/Applications/Raycast.app"
       "/Applications/Pearcleaner.app"
+      "/Applications?LibreOffice.app"
       # Add your persistent apps here
     ];
     persistent-others = [
