@@ -13,10 +13,10 @@
       "bat"
       "helm"
       "docker"
+      "pyenv"
     ];
     casks = [
       "windows-app"
-      "pyenv"
       "copyclip"
       "the-unarchiver"
       "mstystudio"
