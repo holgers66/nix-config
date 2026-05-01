@@ -21,6 +21,7 @@ in
       "/Applications/Rancher Desktop.app"
       "/Applications/Windows App.app"
       "/System/Applications/System Settings.app"
+      "/Applications/zoom.us.app"
       "/${pkgs.dbeaver-bin}/Applications/DBeaver.app"
       "/${pkgs.raycast}/Applications/Raycast.app"
       "/Applications/Pearcleaner.app"
