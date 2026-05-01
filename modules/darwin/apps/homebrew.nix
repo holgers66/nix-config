@@ -16,6 +16,7 @@
     ];
     casks = [
       "windows-app"
+      "pyenv"
       "copyclip"
       "the-unarchiver"
       "mstystudio"
