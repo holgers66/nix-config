@@ -9,13 +9,13 @@ in
     orientation = "bottom";
     persistent-apps = [
       "/System/Applications/Calendar.app"
+      "/${pkgs.google-chrome}/Applications/Google Chrome.app"      
       # "/Applications/Safari.app"
       # Use the nixpkgs path to the app for apps installed via nix. This will automatically use the latest nix store path.
       "/${pkgs.slack}/Applications/Slack.app"
       "/${pkgs.vscode}/Applications/Visual Studio Code.app"
       "/${pkgs.iterm2}/Applications/iTerm2.app"
       "/${pkgs.bitwarden-desktop}/Applications/Bitwarden.app"
-      "/Applications/Helium.app"
       "/Applications/Claude.app"
       "/${pkgs.obsidian}/Applications/Obsidian.app"
       "/Applications/Rancher Desktop.app"
