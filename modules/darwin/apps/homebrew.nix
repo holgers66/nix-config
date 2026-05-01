@@ -17,6 +17,7 @@
     ];
     casks = [
       "windows-app"
+      "zoom"
       "copyclip"
       "the-unarchiver"
       "mstystudio"
