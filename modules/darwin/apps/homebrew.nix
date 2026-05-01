@@ -14,6 +14,7 @@
       "helm"
       "docker"
       "pyenv"
+      "stern"
     ];
     casks = [
       "windows-app"
