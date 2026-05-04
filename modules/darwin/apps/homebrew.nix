@@ -30,6 +30,7 @@
       "grammarly-desktop"
       "claude"
       "rapidapi"
+      "tailscale"
       ];
   };
 }
