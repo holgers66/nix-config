@@ -16,6 +16,7 @@ in
       "/${pkgs.vscode}/Applications/Visual Studio Code.app"
       "/${pkgs.iterm2}/Applications/iTerm2.app"
       "/${pkgs.bitwarden-desktop}/Applications/Bitwarden.app"
+      "/Applications/1Password.app"
       "/Applications/Claude.app"
       "/${pkgs.obsidian}/Applications/Obsidian.app"
       "/Applications/Rancher Desktop.app"
