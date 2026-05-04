@@ -31,6 +31,7 @@
       "claude"
       "rapidapi"
       "tailscale"
+      "eset-cyber-security"
       ];
   };
 }
