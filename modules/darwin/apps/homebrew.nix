@@ -31,6 +31,7 @@
       "claude"
       "rapidapi"
       "tailscale-app"
+      "1password"
       ];
   };
 }
