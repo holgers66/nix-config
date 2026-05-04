@@ -26,7 +26,7 @@ in
       "/${pkgs.raycast}/Applications/Raycast.app"
       "/Applications/Pearcleaner.app"
       "/Applications/LibreOffice.app"
-      "/${pkks.tailscale}/Applications/Tailscale.app"
+      "/${pkgs.tailscale}/Applications/Tailscale.app"
        # Add more persistent apps here
        # Example: "/Applications/YourApp.app"
        # For nix-installed apps, use the nix store path as shown above
