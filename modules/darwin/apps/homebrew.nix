@@ -30,8 +30,7 @@
       "grammarly-desktop"
       "claude"
       "rapidapi"
-      "tailscale"
-      "eset-cyber-security"
+      "tailscale-app"
       ];
   };
 }
