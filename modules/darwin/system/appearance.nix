@@ -26,6 +26,13 @@ in
       "/${pkgs.raycast}/Applications/Raycast.app"
       "/Applications/Pearcleaner.app"
       "/Applications/LibreOffice.app"
+      "/${pkks.tailscale}/Applications/Tailscale.app"
+       # Add more persistent apps here
+       # Example: "/Applications/YourApp.app"
+       # For nix-installed apps, use the nix store path as shown above
+       # Example: "/${pkgs.your-nix-package}/Applications/YourApp.app"
+       # You can also mix both approaches as needed
+       # Example: "/Applications/AnotherApp.app"
       # Add your persistent apps here
     ];
     persistent-others = [
