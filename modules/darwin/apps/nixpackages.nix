@@ -2,11 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-      obsidian
-      bitwarden-desktop
-      google-chrome
-#      firefox
-#      vlc-bin
 #      docker-compose
 #      colima
 #      lima

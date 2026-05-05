@@ -43,6 +43,11 @@
       "slack"
       "visual-studio-code"
       "iterm2"
+      "google-chrome"
+      "obsidian"
+      "bitwarden"
+      "firefox"
+      "vlc"
       ];
   };
 }
