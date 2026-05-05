@@ -2,12 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-      zsh-powerlevel10k
-      meslo-lgs-nf
-      slack
-      tmux
-      vscode
-      iterm2
       obsidian
       bitwarden-desktop
       google-chrome

@@ -20,6 +20,8 @@
       "awscli"
       "azure-cli"
       "go"
+      "powerlevel10k"
+      "tmux"
     ];
     casks = [
       "windows-app"
@@ -38,6 +40,9 @@
       "tailscale-app"
       "1password"
       "gcloud-cli"
+      "slack"
+      "visual-studio-code"
+      "iterm2"
       ];
   };
 }
