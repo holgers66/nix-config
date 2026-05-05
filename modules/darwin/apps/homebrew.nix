@@ -61,8 +61,6 @@
       "fzf"
       "jo"
       "jless"
-      "dbeaver-community"
-
     ];
     casks = [
       "windows-app"
@@ -90,6 +88,7 @@
       "firefox"
       "vlc"
       "raycast"
+      "dbeaver-community"
       ];
   };
 }
