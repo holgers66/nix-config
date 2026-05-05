@@ -9,12 +9,17 @@
     global.autoUpdate = true;
 
     brews = [
+      "kubernetes-cli"
       "iproute2mac"
       "bat"
       "helm"
       "docker"
       "pyenv"
       "stern"
+      "vim"
+      "awscli"
+      "azure-cli"
+      "go"
     ];
     casks = [
       "windows-app"
@@ -32,6 +37,7 @@
       "rapidapi"
       "tailscale-app"
       "1password"
+      "gcloud-cli"
       ];
   };
 }

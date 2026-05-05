@@ -4,67 +4,61 @@
   environment.systemPackages = with pkgs; [
       zsh-powerlevel10k
       meslo-lgs-nf
-      awscli2
-      azure-cli
-      go
-      google-cloud-sdk
-      kubectl
       slack
       tmux
-      vim
       vscode
       iterm2
       obsidian
       bitwarden-desktop
       google-chrome
-      firefox
-      vlc-bin
-      docker-compose
-      colima
-      lima
-      podman
-      google-cloud-sdk
-      tree
-      htop
-      pstree
-      openssl
-      rsync
-      ssh-copy-id
-      screen
+#      firefox
+#      vlc-bin
+#      docker-compose
+#      colima
+#      lima
+#      podman
+#      google-cloud-sdk
+#      tree
+#      htop
+#      pstree
+#      openssl
+#      rsync
+#      ssh-copy-id
+#      screen
       zsh-completions
       zsh-autosuggestions
       zsh-syntax-highlighting
       nix-zsh-completions
-      coreutils
-      moreutils
-      findutils
-      binutils
-      nmap
-      socat
-      dnstracer
-      dnsx
-      eksctl
-      hcloud
-      oci-cli
-      kind
-      minikube
-      kubeshark
-      k8sgpt
-      k9s
-      ansible
-      ansible-lint
-      opentofu
-      imagemagick
-      ffmpeg
-      yt-dlp
-      p7zip
-      jq
-      jo
-      jless
-      yq
-      fzf
-      dbeaver-bin
-      raycast
-      rectangle
+#      coreutils
+#      moreutils
+#      findutils
+#      binutils
+#      nmap
+#      socat
+#      dnstracer
+#      dnsx
+#      eksctl
+#      hcloud
+#      oci-cli
+#      kind
+#      minikube
+#      kubeshark
+#      k8sgpt
+#      k9s
+#      ansible
+#      ansible-lint
+#      opentofu
+#      imagemagick
+#      ffmpeg
+#      yt-dlp
+#      p7zip
+#      jq
+#      jo
+#      jless
+#      yq
+#      fzf
+#      dbeaver-bin
+#      raycast
+#      rectangle
   ];
 }
