@@ -2,41 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
-#      docker-compose
-#      colima
-#      lima
-#      podman
 #      google-cloud-sdk
-#      tree
-#      htop
-#      pstree
-#      openssl
-#      rsync
-#      ssh-copy-id
-#      screen
-      zsh-completions
-      zsh-autosuggestions
-      zsh-syntax-highlighting
       nix-zsh-completions
-#      coreutils
-#      moreutils
-#      findutils
-#      binutils
-#      nmap
-#      socat
-#      dnstracer
-#      dnsx
-#      eksctl
-#      hcloud
-#      oci-cli
-#      kind
-#      minikube
-#      kubeshark
-#      k8sgpt
-#      k9s
-#      ansible
-#      ansible-lint
-#      opentofu
 #      imagemagick
 #      ffmpeg
 #      yt-dlp
