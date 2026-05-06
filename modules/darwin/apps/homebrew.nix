@@ -61,6 +61,7 @@
       "fzf"
       "jo"
       "jless"
+      "rm-trash"
     ];
     casks = [
       "windows-app"
