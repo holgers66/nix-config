@@ -61,6 +61,7 @@
       "fzf"
       "jo"
       "jless"
+      "watch"
     ];
     casks = [
       "windows-app"
