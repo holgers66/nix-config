@@ -8,7 +8,7 @@ in
     autohide = true;
     orientation = "bottom";
     persistent-apps = [
-      "/Applications/Calendar.app"
+      "/System/Applications/Calendar.app"
       "/Applications/Google Chrome.app"      
       # "/Applications/Safari.app"
       # Use the nixpkgs path to the app for apps installed via nix. This will automatically use the latest nix store path.
@@ -20,7 +20,7 @@ in
       "/Applications/Obsidian.app"
       "/Applications/Rancher Desktop.app"
       "/Applications/Windows App.app"
-      "/Applications/System Settings.app"
+      "/System/Applications/System Settings.app"
       "/Applications/zoom.us.app"
       "/Applications/DBeaver.app"
       "/Applications/Raycast.app"
