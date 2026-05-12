@@ -62,6 +62,7 @@
       "jo"
       "jless"
       "watch"
+      "kubecolor"
     ];
     casks = [
       "windows-app"
