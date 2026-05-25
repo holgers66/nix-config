@@ -12,7 +12,7 @@
       "kubernetes-cli"
       "iproute2mac"
       "bat"
-#      "helm"
+      "helm"
       "docker"
       "pyenv"
       "stern"
