@@ -13,7 +13,6 @@
       "iproute2mac"
       "bat"
 #      "helm"
-      "helm@3"
       "docker"
       "pyenv"
       "stern"
