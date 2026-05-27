@@ -73,7 +73,7 @@
       "pearcleaner"
       "font-meslo-for-powerlevel10k"
       "maccy"
-      "rancher"
+      "docker-desktop"
       "caffeine"
       "grammarly-desktop"
       "claude"
