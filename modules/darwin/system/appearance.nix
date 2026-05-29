@@ -18,7 +18,7 @@ in
       "/Applications/1Password.app"
       "/Applications/Claude.app"
       "/Applications/Obsidian.app"
-      "/Applications/Rancher Desktop.app"
+      "/Applications/Docker.app"
       "/Applications/Windows App.app"
       "/System/Applications/System Settings.app"
       "/Applications/zoom.us.app"
