@@ -46,8 +46,9 @@ in
   };
 
   system.defaults.NSGlobalDomain = {
-    AppleInterfaceStyle = "Dark";     # "Dark" or "Light" - Darkmode all the things
-    AppleIconAppearanceTheme = "RegularDark"; # "RegularDark" or "HighContrastDark" - Dark mode icons
+    AppleInterfaceStyleSwitchesAutomatically = true; # Automatically switch between Light and Dark mode based on time of day
+#    AppleInterfaceStyle = "Light";     # "Dark" or "Light" - Darkmode all the things
+    AppleIconAppearanceTheme = "RegularAutomatic"; # "RegularDark" or "HighContrastDark" - Dark mode icons
     # Add more NSGlobalDomain settings here
   };
 
