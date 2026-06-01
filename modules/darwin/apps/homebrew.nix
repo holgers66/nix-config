@@ -65,6 +65,7 @@
       "kubecolor"
     ];
     casks = [
+#      "karabiner-elements"
       "windows-app"
       "zoom"
       "copyclip"
