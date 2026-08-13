@@ -9,6 +9,13 @@
     global.autoUpdate = true;
 
     brews = [
+      "autoconf"
+      "ca-certificates"
+      "certifi"
+      "cffi"
+      "cryptography"
+      "docker-completion"
+      "gettext"
       "kubernetes-cli"
       "iproute2mac"
       "bat"
