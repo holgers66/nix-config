@@ -21,13 +21,14 @@ in
       "/Applications/Docker.app"
       "/Applications/Windows App.app"
       "/System/Applications/System Settings.app"
-      "/Applications/zoom.us.app"
+      "/Applications/Nix Apps/zoom.us.app"
       "/Applications/DBeaver.app"
       "/Applications/Raycast.app"
       "/Applications/Pearcleaner.app"
-      "/Applications/LibreOffice.app"
+#      "/Applications/LibreOffice.app"
       "/Applications/Tailscale.app"
       "/Applications/AWS VPN Client/AWS VPN Client.app"
+      "/Applications/Bitwarden.app"
        # Add more persistent apps here
        # Example: "/Applications/YourApp.app"
        # For nix-installed apps, use the nix store path as shown above

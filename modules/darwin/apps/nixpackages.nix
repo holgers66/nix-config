@@ -4,6 +4,9 @@
   environment.systemPackages = with pkgs; [
 #      google-cloud-sdk
       nix-zsh-completions
+      utm
+      zoom-us
+      tailscale
 #      imagemagick
 #      ffmpeg
 #      yt-dlp
