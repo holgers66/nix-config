@@ -131,6 +131,7 @@
       "raycast"
       "dbeaver-community"
       "font-jetbrains-mono-nerd-font"
+      "utm"
       ];
   };
 }
