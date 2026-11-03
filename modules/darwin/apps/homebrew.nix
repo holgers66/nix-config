@@ -8,6 +8,9 @@
     enableZshIntegration = true;
     global.autoUpdate = true;
 
+    # Declare the taps nix-homebrew manages so `brew bundle cleanup` doesn't try to untap them
+    taps = builtins.attrNames config.nix-homebrew.taps;
+
     brews = [
       "autoconf"
       "ca-certificates"
@@ -105,6 +108,7 @@
       "node"
     ];
     casks = [
+      "firefox"
       "bitwarden"
       "windows-app"
       "microsoft-teams"

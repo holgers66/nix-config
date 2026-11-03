@@ -113,6 +113,8 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.verbose = true;
+            # Move pre-existing unmanaged files aside (e.g. .zshrc -> .zshrc.hm-backup) instead of aborting
+            home-manager.backupFileExtension = "hm-backup";
 
             home-manager.users.${userVars.userA.username} = { pkgs, lib, ... }:
             {
