@@ -1,11 +1,13 @@
 {
-  description = "Example multi-host, multi-user Darwin system flake with hostVars/userVars, using let-bindings and strict commas";
+  description = "nix-darwin + home-manager configuration for Holgers-MacBook-Pro";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
-    nix-darwin.url = "github:nix-darwin/nix-darwin/master";
-    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    nix-darwin = {
+      url = "github:nix-darwin/nix-darwin/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -31,112 +33,50 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, home-manager, ... }:
+  outputs = inputs@{ self, nix-darwin, home-manager, nix-homebrew, ... }:
     let
-      ###################################
-      # 1. Host variables
-      ###################################
-      hostVars = {
-        host1 = {
-          hostname = "Holgers-MacBook-Pro";
-          arch = "aarch64-darwin";
-          homeDirectory = "/Users/hschneider";
-        };
-      };
-
-      ###################################
-      # 2. User variables
-      ###################################
-      userVars = {
-        userA = {
-          username      = "hschneider";
-          homeDirectory = "/Users/hschneider";
-          shell         = "zsh";
-        };
-      };
-
-      ###################################
-      # 3. Base Darwin config function
-      ###################################
-      baseDarwinConfig = hostKey:
-        { config, pkgs, ... }:
-        {
-          nixpkgs.hostPlatform = hostVars.${hostKey}.arch;
-
-          system.stateVersion = 6;
-
-          nix.extraOptions = ''
-            experimental-features = nix-command flakes
-          '';
-          nix.package = pkgs.nix;
-          nix.settings.experimental-features = "nix-command flakes";
-
-          system.configurationRevision = self.rev or self.dirtyRev or null;
-
-          nixpkgs.config.allowUnfree = true;
-          nixpkgs.config.allowBroken = true;
-        };
+      hostname = "Holgers-MacBook-Pro";
+      system = "aarch64-darwin";
+      username = "hschneider";
     in
     {
-      ###################################
-      # 4. Host 1: Holgers-MacBook-Pro
-      ###################################
-      darwinConfigurations."${hostVars.host1.hostname}" = let
-        host1Base = baseDarwinConfig "host1";
-      in
-      nix-darwin.lib.darwinSystem {
-        modules = [
-          ({ pkgs, ... }: {
-            _module.args = {
-              username = "${userVars.userA.username}";
-            };
-          })
-          host1Base
-          ./modules/darwin/default.nix
-          inputs.nix-homebrew.darwinModules.nix-homebrew
-          {
-            nix-homebrew = {
-              enable = true;
-              enableRosetta = true;
-              user = userVars.userA.username;
-              taps = {
-                "homebrew/homebrew-core"   = inputs.homebrew-core;
-                "homebrew/homebrew-cask"   = inputs.homebrew-cask;
-                "homebrew/homebrew-bundle" = inputs.homebrew-bundle;
-                "argoproj/homebrew-tap"    = inputs.homebrew-argoproj;
-              };
-              autoMigrate = true;
-              mutableTaps = true;
-            };
-          }
-          home-manager.darwinModules.home-manager {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.verbose = true;
-            # Move pre-existing unmanaged files aside (e.g. .zshrc -> .zshrc.hm-backup) instead of aborting
-            home-manager.backupFileExtension = "hm-backup";
+      darwinConfigurations.${hostname} = nix-darwin.lib.darwinSystem {
+        # Available as module arguments in every darwin module
+        specialArgs = { inherit inputs username; };
 
-            home-manager.users.${userVars.userA.username} = { pkgs, lib, ... }:
-            {
-              home.stateVersion = "24.11";
-              home.homeDirectory = lib.mkForce (userVars.userA.homeDirectory);
-              programs.zsh.enable  = (userVars.userA.shell == "zsh");
-              programs.fish.enable = (userVars.userA.shell == "fish");
-              imports = [
-                ./modules/home/${userVars.userA.username}/default.nix
-              ];
+        modules = [
+          {
+            nixpkgs.hostPlatform = system;
+            nixpkgs.config = {
+              allowUnfree = true;
+              allowBroken = true;
+            };
+
+            nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+            system.stateVersion = 6;
+            system.configurationRevision = self.rev or self.dirtyRev or null;
+          }
+
+          ./modules/darwin
+          nix-homebrew.darwinModules.nix-homebrew
+
+          home-manager.darwinModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              verbose = true;
+              # Move pre-existing unmanaged files aside (e.g. .zshrc -> .zshrc.hm-backup) instead of aborting
+              backupFileExtension = "hm-backup";
+              extraSpecialArgs = { inherit username; };
+              users.${username} = import ./modules/home/${username};
             };
           }
         ];
       };
 
-
-
-      ###################################
-      # 6. (Optional) Expose packages
-      ###################################
-      darwinPackages = {
-        "${hostVars.host1.hostname}" = self.darwinConfigurations."${hostVars.host1.hostname}".pkgs;
-      };
+      # Expose the package set, e.g. `nix build .#darwinPackages.Holgers-MacBook-Pro.hello`
+      darwinPackages.${hostname} = self.darwinConfigurations.${hostname}.pkgs;
     };
 }

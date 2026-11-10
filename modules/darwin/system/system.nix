@@ -1,31 +1,25 @@
-{ config, lib, ... }:
+{ username, ... }:
+{
+  # Required for user-scoped system.defaults (dock, finder, ...)
+  system.primaryUser = username;
 
-{ 
-  system.defaults.screencapture = {
-    location = "~/Documents/Screenshots"; # Set default screenshot location
-    # Add more screencapture settings here
+  system.defaults = {
+    screencapture.location = "~/Documents/Screenshots";
+    screensaver.askForPassword = true;
+
+    trackpad = {
+      TrackpadThreeFingerDrag = true;
+      Clicking = true; # tap to click
     };
 
-  system.defaults.trackpad = {
-    TrackpadThreeFingerDrag = true; # Enable three-finger drag
-    Clicking = true; # Enable tap to click
-      # Add more trackpad settings here
-      # You can find more trackpad settings by running `defaults read com.apple.AppleMultitouchTrackpad` in the terminal and adding the desired ones her
-    # Set up your trackpad preferences here
+    controlcenter = {
+      Bluetooth = true;
+      Sound = true;
+    };
   };
-
-  system.defaults.controlcenter.Bluetooth = true; # Show Bluetooth in the control center
-
-  system.defaults.controlcenter.Sound = true; # Show Sound in the control center
-
 
   system.keyboard = {
-    swapLeftCtrlAndFn = false; # Swap left control and function keys
-    enableKeyMapping = true; # Enable key mapping
-    # Set up your keyboard preferences here
+    enableKeyMapping = true;
+    swapLeftCtrlAndFn = false;
   };
-
-  system.primaryUser = "hschneider"; # Set the primary user for this system, used for some defaults and permissions
-  system.defaults.screensaver.askForPassword = true; # Require password immediately after screensaver starts
-
 }

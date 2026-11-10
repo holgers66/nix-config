@@ -1,10 +1,9 @@
-{ config, pkgs, lib, ... }:
+{ lib, username, ... }:
 {
-  imports = [
-    ./terminal/default.nix
-  ];
+  imports = [ ./terminal ];
 
   home = {
-    packages = with pkgs; [];
+    stateVersion = "24.11";
+    homeDirectory = lib.mkForce "/Users/${username}";
   };
 }

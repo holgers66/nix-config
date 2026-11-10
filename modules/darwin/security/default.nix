@@ -1,6 +1,4 @@
-{ config, pkgs, ... }:
 {
-  # Enable TouchID for PAM auth: you could also place security/pam or other service configs here:
+  # Touch ID for sudo
   security.pam.services.sudo_local.touchIdAuth = true;
-
 }

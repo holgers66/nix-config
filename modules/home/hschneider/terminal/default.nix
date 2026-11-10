@@ -1,25 +1,12 @@
-{ config, lib, pkgs, ... }:
-
+{ config, lib, ... }:
 {
   programs.zsh = {
     enable = true;
     autocd = true;
-    dotDir = "/Users/hschneider/.config/zsh";
-    autosuggestion.enable = true;
+    dotDir = "${config.xdg.configHome}/zsh";
     enableCompletion = true;
-
-    plugins = with pkgs; [
-      {
-        name = "zsh-syntax-highlighting";
-        src = fetchFromGitHub {
-          owner = "zsh-users";
-          repo = "zsh-syntax-highlighting";
-          rev = "0.6.0";
-          sha256 = "0zmq66dzasmr5pwribyh4kbkk23jxbpdw4rjxx0i7dx8jjp2lzl4";
-        };
-        file = "zsh-syntax-highlighting.zsh";
-      }
-    ];
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
 
     initContent = lib.mkMerge [
       # Powerlevel10k instant prompt — must stay at the very top of .zshrc
@@ -31,5 +18,4 @@
       (builtins.readFile ./zshrc.zsh)
     ];
   };
-
 }
