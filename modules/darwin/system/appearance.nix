@@ -5,7 +5,7 @@ in
 {
   system.defaults.dock = {
     autohide = true;
-    orientation = "bottom";
+    orientation = "left"; # side docks stay on the main display (bottom docks follow the cursor between screens)
     mineffect = "scale";
     show-recents = false;
     tilesize = 48;
