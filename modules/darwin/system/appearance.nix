@@ -11,9 +11,9 @@ in
     tilesize = 48;
 
     persistent-apps = [
-      "/System/Applications/Calendar.app"
       "/Applications/Google Chrome.app"
       "/Applications/Slack.app"
+      "/Applications/Microsoft Teams.app"
       "/Applications/Visual Studio Code.app"
       "/Applications/iTerm.app"
       "/Applications/1Password.app"
@@ -21,12 +21,10 @@ in
       "/Applications/Obsidian.app"
       "/Applications/Docker.app"
       "/System/Applications/System Settings.app"
-      "/Applications/Pearcleaner.app"
       "/Applications/Tailscale.app"
       "/Applications/AWS VPN Client/AWS VPN Client.app"
       "/Applications/Bitwarden.app"
       "/Applications/TeamViewer.app"
-      "/Applications/Moonlight.app"
       "/Applications/Granola.app"
     ];
 
