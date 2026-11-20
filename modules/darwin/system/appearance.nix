@@ -5,10 +5,12 @@ in
 {
   system.defaults.dock = {
     autohide = true;
-    orientation = "left"; # side docks stay on the main display (bottom docks follow the cursor between screens)
+    autohide-delay = 0.0; # no pause before the Dock appears
+    autohide-time-modifier = 0.2; # fast show/hide animation (macOS default is 0.5)
+    orientation = "bottom";
     mineffect = "scale";
     show-recents = false;
-    tilesize = 48;
+    tilesize = 72; # slightly larger than the macOS default of 64
 
     persistent-apps = [
       "/Applications/Google Chrome.app"
